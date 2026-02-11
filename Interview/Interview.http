@@ -1,6 +1,39 @@
 @Interview_HostAddress = http://localhost:5134
+@ContentType = application/json
 
-GET {{Interview_HostAddress}}/weatherforecast/
-Accept: application/json
+### List all candidates
+GET {{Interview_HostAddress}}/api/candidate
+Accept: {{ContentType}}
+
+###
+
+### Get candidate by ID
+GET {{Interview_HostAddress}}/api/candidate/550e8400-e29b-41d4-a716-446655440000
+Accept: {{ContentType}}
+
+###
+
+### Get candidate with empty ID (intentional bug test)
+GET {{Interview_HostAddress}}/api/candidate/00000000-0000-0000-0000-000000000000
+Accept: {{ContentType}}
+
+###
+
+### Test buggy endpoint
+GET {{Interview_HostAddress}}/api/candidate/buggy
+Accept: {{ContentType}}
+
+###
+
+### Create a new candidate
+POST {{Interview_HostAddress}}/api/candidate
+Content-Type: {{ContentType}}
+
+{
+  "id": "550e8400-e29b-41d4-a716-446655440001",
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "position": "Senior Backend Developer"
+}
 
 ###

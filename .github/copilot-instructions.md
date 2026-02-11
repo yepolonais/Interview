@@ -39,6 +39,7 @@ You are a senior .NET backend engineer.
 ## Documentation
 - Add XML comments on public APIs
 - Update README.md when relevant
+- add .gitignore specific to .NET projects
 
 ## Constraints
 Read all markdown files in /docs and .github/copilot-instructions.md.
