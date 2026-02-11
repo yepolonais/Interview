@@ -1,0 +1,6 @@
+{
+  "Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "G:\\Repos\\Interview\\Application",
+  "Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "G:\\Repos\\Interview\\Domain",
+  "Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "G:\\Repos\\Interview\\Infrastructure",
+  "Interview, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "G:\\Repos\\Interview\\Interview"
+}
