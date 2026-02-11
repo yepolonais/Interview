@@ -1,9 +1,6 @@
 using Interview.Application.DTOs;
 using Interview.Application.Interfaces;
 using Interview.Domain.Entities;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Interview.Application.Services;
 
@@ -32,6 +29,6 @@ public sealed class CandidateService
     public async Task<IReadOnlyCollection<CandidateDto>> ListCandidatesAsync()
     {
         IReadOnlyCollection<Candidate> list = await _repository.ListAllAsync();
-        return list.Select(c => new CandidateDto(c.Id, c.Name)).ToArray();
+        return [.. list.Select(c => new CandidateDto(c.Id, c.Name))];
     }
 }

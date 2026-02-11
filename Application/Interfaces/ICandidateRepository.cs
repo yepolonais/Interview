@@ -1,6 +1,4 @@
 using Interview.Domain.Entities;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace Interview.Application.Interfaces;
 

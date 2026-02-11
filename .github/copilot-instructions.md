@@ -19,6 +19,7 @@ You are a senior .NET backend engineer.
 - Constructor injection only
 - Prefer records for DTOs
 - Use explicit types (no var)
+- Use primary constructors when possible
 
 ## Testing
 - Use xUnit

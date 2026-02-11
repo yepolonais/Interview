@@ -1,15 +1,12 @@
 using Interview.Application.Interfaces;
 using Interview.Domain.Entities;
 using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Interview.Infrastructure.Repositories;
 
 public sealed class InMemoryCandidateRepository : ICandidateRepository
 {
-    private readonly ConcurrentDictionary<System.Guid, Candidate> _store = new();
+    private readonly ConcurrentDictionary<Guid, Candidate> _store = new();
 
     public Task AddAsync(Candidate candidate)
     {

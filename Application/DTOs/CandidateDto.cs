@@ -1,3 +1,3 @@
 namespace Interview.Application.DTOs;
 
-public sealed record CandidateDto(System.Guid Id, string Name);
+public sealed record CandidateDto(Guid Id, string Name);
