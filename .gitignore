@@ -26,6 +26,9 @@ bld/
 *.userosscache
 *.sln.docstates
 
+# Documentation
+docs/
+
 # Build lock file
 project.lock.json
 project.fragment.lock.json
