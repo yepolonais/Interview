@@ -50,4 +50,13 @@ The integration test `BuggyEndpoint_ReturnsOk` is expected to fail until the can
 2. Debug (15 min): reproduce and fix the buggy endpoint (`GET /api/candidate/buggy`) so the integration test passes.
 3. Discussion (10 min): explain the choice of fix, discuss architecture and next improvements.
 
+## Questions
 
+### Intermediate
+
+- Imagine that you would like the validate a DTO in your controller. What would you do ?
+- What are middlewares, what are they used for ?
+- What is dependency injection ?
+- How is memory managed in .NET ?
+- What would you do to track a memory leak ?
+- What is AOT ? 
