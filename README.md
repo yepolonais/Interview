@@ -1,6 +1,6 @@
 # Interview assessment scaffold
 
-This repository is a minimal .NET 9 Clean Architecture scaffold intended for a 30-minute coding exercise.
+This repository is a minimal .NET 8 Clean Architecture scaffold intended for a 30-minute coding exercise.
 
 **Contents**
 - `Domain` — entities, value objects, domain exceptions
@@ -11,7 +11,7 @@ This repository is a minimal .NET 9 Clean Architecture scaffold intended for a 3
 
 **Intentional exercise elements**
 - A deliberately buggy endpoint: `GET /api/candidate/buggy` in `Interview/Controllers/CandidateController.cs`.
-- A failing integration test targeting that endpoint: `Tests/Integration/CandidateControllerIntegrationTests.cs`.
+- A failing integration test targeting this endpoint: `Tests/Integration/CandidateControllerIntegrationTests.cs`.
 
 These are provided so a candidate can spend ~15 minutes debugging and fixing the behavior, then run tests.
 
@@ -52,9 +52,9 @@ The integration test `BuggyEndpoint_ReturnsOk` is expected to fail until the can
 
 ## Questions
 
-### Intermediate
+### Some dotnet questions
 
-- Imagine that you would like the validate a DTO in your controller. What would you do ?
+- Imagine that you would like to validate a DTO in your controller. What would you do ?
 - What are middlewares, what are they used for ?
 - What is dependency injection ?
 - How is memory managed in .NET ?
